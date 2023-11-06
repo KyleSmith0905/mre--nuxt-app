@@ -18,7 +18,7 @@ export default NuxtAuthHandler({
 				username: { label: "Username", type: "text", placeholder: "jsmith" },
 				password: { label: "Password", type: "password" }
 			},
-			async authorize(credentials, req) {
+			async authorize() {
 				// Add logic here to look up the user from the credentials supplied
 				const user = { id: "1", name: "J Smith", email: "jsmith@example.com" }
 	
