@@ -1,5 +1,7 @@
 import { NuxtAuthHandler } from '#auth'
 import GitHubProvider from 'next-auth/providers/github'
+import { PrismaAdapter } from "@auth/prisma-adapter"
+import { PrismaClient } from '@prisma/client'
 
 export default NuxtAuthHandler({
 	providers: [
@@ -8,5 +10,7 @@ export default NuxtAuthHandler({
 			clientId: 'enter-your-client-id-here',
 			clientSecret: 'enter-your-client-secret-here'
 		})
-	]
+	],
+	// @ts-expect-error
+	adapter: PrismaAdapter(new PrismaClient()),
 })
