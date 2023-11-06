@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   auth: {
-    baseURL: process.env.ORIGIN
+    baseURL: process.env.ORIGIN,
+    globalAppMiddleware: false,
   }
 })
