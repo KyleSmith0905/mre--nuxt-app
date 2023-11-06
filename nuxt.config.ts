@@ -3,4 +3,7 @@ export default defineNuxtConfig({
   modules: ['@sidebase/nuxt-auth'],
   devtools: { enabled: true },
   ssr: true,
+  auth: {
+    baseURL: process.env.ORIGIN
+  }
 })
