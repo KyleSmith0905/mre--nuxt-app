@@ -7,6 +7,6 @@ export default defineNuxtConfig({
     authSecret: process.env.AUTH_SECRET,
   },
   auth: {
-    baseURL: process.env.ORIGIN,
+    baseURL: process.env.AUTH_ORIGIN,
   }
 })
