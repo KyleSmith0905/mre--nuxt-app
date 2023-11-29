@@ -1,8 +1,9 @@
 <script setup lang="ts">
-const {data} = await useFetch('/api/user');
+const {signIn, signOut, status} = useAuth();
+
 </script>
 <template>
-  <div :class="{'signed-in': data?.user}">
-    <NuxtWelcome />
-  </div>
+  <p>Auth Status: {{ status }}</p>
+  <button @click="signIn('github')">Sign In</button>
+  <button @click="signOut()">Sign Out</button>
 </template>

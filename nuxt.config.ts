@@ -6,8 +6,13 @@ export default defineNuxtConfig({
   runtimeConfig: {
     authSecret: process.env.AUTH_SECRET,
   },
+  routeRules: {
+    '/': {
+      isr: 604800,
+    }
+  },
   auth: {
     baseURL: process.env.ORIGIN,
     globalAppMiddleware: false,
-  }
+  },
 })
