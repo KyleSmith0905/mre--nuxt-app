@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@auth/prisma-adapter':
-    specifier: ^1.0.5
-    version: 1.0.5(@prisma/client@5.5.2)
+    specifier: ^1.0.6
+    version: 1.0.6(@prisma/client@5.5.2)
   '@prisma/client':
     specifier: 5.5.2
     version: 5.5.2(prisma@5.5.2)
@@ -23,8 +23,8 @@ devDependencies:
     specifier: latest
     version: 1.0.0(nuxt@3.8.0)(vite@4.5.0)
   '@sidebase/nuxt-auth':
-    specifier: 0.6.0-rc.1
-    version: 0.6.0-rc.1(next-auth@4.21.1)(vue@3.3.7)
+    specifier: 0.6.0
+    version: 0.6.0(next-auth@4.21.1)(vue@3.3.7)
   nuxt:
     specifier: ^3.8.0
     version: 3.8.0(vite@4.5.0)
@@ -48,8 +48,8 @@ packages:
     resolution: {integrity: sha512-pvFiLP2BeOKA/ZOS6jxx4XhKzdVLHDhGlFEaZ2flWWYf2xOqVniqpk38I04DFRyz+L0ASggl7SkItTc+ZLju4w==}
     dev: true
 
-  /@auth/core@0.18.0:
-    resolution: {integrity: sha512-Xb41H3FIv4PlTZmwoFvntaNlVTwIqFxIg7i0/ieHOOxf/7H8EJpGTWoNrqKhwMyZEPU6fHp+VcUiqdX3vFrWSg==}
+  /@auth/core@0.18.1:
+    resolution: {integrity: sha512-L4MehYt/A7e5djsEid3jTSkRZ8sysxbirhmCXqSCPimGoFUtMCwTZrpzTALTSRwXGw/mps5fYlHROo3UQk9B3w==}
     peerDependencies:
       nodemailer: ^6.8.0
     peerDependenciesMeta:
@@ -58,18 +58,18 @@ packages:
     dependencies:
       '@panva/hkdf': 1.1.1
       cookie: 0.5.0
-      jose: 4.15.4
+      jose: 5.1.2
       oauth4webapi: 2.3.0
       preact: 10.11.3
       preact-render-to-string: 5.2.3(preact@10.11.3)
     dev: false
 
-  /@auth/prisma-adapter@1.0.5(@prisma/client@5.5.2):
-    resolution: {integrity: sha512-GaacU0TErURwUn/1b29LvybxUjlBxi/wIw/4imMNM+e2AfRLpB3PgpPqITQFd2PEdLTXIaHhVZvnzT4pMu9Ueg==}
+  /@auth/prisma-adapter@1.0.6(@prisma/client@5.5.2):
+    resolution: {integrity: sha512-599Bb+iajDf3cSUF0bNzcqpiJr9QCo7dwzXMuRvzxvtT/1fhDWGDt3E/GwXiYnvUYPndEA47atNVjLhV2ch0Hw==}
     peerDependencies:
       '@prisma/client': '>=2.26.0 || >=3 || >=4 || >=5'
     dependencies:
-      '@auth/core': 0.18.0
+      '@auth/core': 0.18.1
       '@prisma/client': 5.5.2(prisma@5.5.2)
     transitivePeerDependencies:
       - nodemailer
@@ -1631,8 +1631,8 @@ packages:
       rollup: 3.29.4
     dev: true
 
-  /@sidebase/nuxt-auth@0.6.0-rc.1(next-auth@4.21.1)(vue@3.3.7):
-    resolution: {integrity: sha512-ncwDLD1koXeO/fFwcCwjA9uxf0b755s5yHJQxsBjRoCyRNadz9snSCe8e78N8i/NW8da7rZrzKWejIOXlVSizw==}
+  /@sidebase/nuxt-auth@0.6.0(next-auth@4.21.1)(vue@3.3.7):
+    resolution: {integrity: sha512-axAUBQWqcFlUP2WpjNc5Wxo+G6gY/5K1VMOfhUABJEZualaz413W44Kzs+1ITebti93dgTNIN8zu6nM9DsO2TA==}
     peerDependencies:
       next-auth: ^4.21.1
     dependencies:
@@ -3636,6 +3636,10 @@ packages:
 
   /jose@4.15.4:
     resolution: {integrity: sha512-W+oqK4H+r5sITxfxpSU+MMdr/YSWGvgZMQDIsNoBDGGy4i7GBPTtvFKibQzW06n3U3TqHjhvBJsirShsEJ6eeQ==}
+
+  /jose@5.1.2:
+    resolution: {integrity: sha512-X7TOC/d8KPvx4wPUuLHVgTSdoWw0UW5TQOUwhvCvj+ZPfsf9vUPhhksYPjNBWVGPQ/6yd/JrL1gQxBnIDwYdFg==}
+    dev: false
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
